@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="MyApp">
+<head>
+	<title>this a page</title>
+</head>
+<script type="text/javascript" src="js/angular.min.js"></script>
+<script type="text/javascript" src="js/angular-route.min.js"></script>
+<script type="text/javascript" src="js/angularfire.min.js"></script>
+<script type="text/javascript" src="js/firebase.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+<body ng-controller="FireBaseController">
+<div>
+	This is angular fire app..!!
+	{{value1}}
+
+	<div ng-hide="authData">
+		<input type="button" name="Login" value="Login" ng-click="login()" />
+ 		
+	</div>
+
+	<div ng-show="authData">
+		<input type="button" name="Logout" value="Logout" ng-click="logout()" />
+	</div>
+
+</div>
+
+
+</body>
+</html>
